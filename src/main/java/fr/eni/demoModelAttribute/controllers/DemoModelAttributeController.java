@@ -14,7 +14,7 @@ import fr.eni.demoModelAttribute.model.Compteur;
 @RequestMapping({"/", "/demoModelAttribute"})
 @SessionAttributes("compteur")
 public class DemoModelAttributeController {
-	
+	//changement
 	//initialisation du compteur
 	@ModelAttribute("compteur") 
 	public Compteur getCompteur() {
