@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Demo @ModelAttribute</title>
+</head>
+<body>
+
+<h1>Demo @ModelAttribute-Partie 01</h1>
+
+<h2>Nombre d'accès en GET à cette page : <span th:text="${compteur.nbGets}"></span></h2>
+<h2>Nombre d'accès en POSTS à cette page : <span th:text="${compteur.nbPosts}"></span></h2>
+
+<a th:href="@{/demoModelAttribute}">Requete GET</a>
+
+<h1 th:text="${monMessage}"></h1>
+
+<h2>Requete POST</h2>
+<form method="post" th:action="@{/demoModelAttribute}">
+
+	<input type="submit" value="Valider"/>
+	
+</form>
+
+
+</body>
+</html>
